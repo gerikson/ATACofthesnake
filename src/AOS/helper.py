@@ -292,7 +292,7 @@ def PCA_colors(config):
             header=0
         )
         sdf = sdf.set_index('sample')
-        sdf = sdf.loc[config['sample']]
+        sdf = sdf.loc[config['samples']]
         colDic = {}
         colIx = 0
         for s in sdf.iloc[:,[0]].values:
