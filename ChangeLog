@@ -1,13 +1,34 @@
 CHANGES
 =======
 
+* 'samples' instead of 'sample'
+* Fixed typo 'sample' instead of 'samples'
+* rename shuffled part
+* add a shuffle ame in case of motifs
+* drop defaults channel from meme
+* drop maxjobs
+* drop smk pin
+* make wf compatible with snakemake 8
+* accomodate external peaks
+* sneak in external peaks under peak\_boundary rule
+* include peakset argument for external peaks
+* deeptools env switch + pin mpl in tobias env
+* motif file for future cluster test
+* exit if no samples are found
+* tobias env switch to conda + cython prereq
+* Update README.md
+* split deeptools outside of seqtools
+* cap numpy version for deeptools
+* fix precommit
+* allow for underscores fasta headers in differential mode. Include pseudocount as an option in CLI
+* split deeptools outside of seqtools
+* cap numpy version for deeptools
+* fix precommit
+* allow for underscores fasta headers in differential mode. Include pseudocount as an option in CLI
+* allow underscores
 * allow underscores
 * set python/numpy/macs version
 * Update seqtools.yml
-
-v0.0.1
-------
-
 * Wd (#14)
 * Wd (#13)
 * Update README.md

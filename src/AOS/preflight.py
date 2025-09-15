@@ -164,7 +164,7 @@ class Preflight():
                 sys.exit("Providing a samplesheet requires a comparisons files as well.")
             else:
                 ssdf = pd.read_csv(self.files['samplesheet'], sep='\t', header=0)
-                if list(ssdf.columns)[0].lower() != 'sample':
+                if list(ssdf.columns)[0].lower() != 'samples':
                     sys.exit("First column in samplesheet needs to be sample. Exiting.")
                 factors = list(ssdf.columns)[1::]
                 with open(self.files['comparison']) as f:
